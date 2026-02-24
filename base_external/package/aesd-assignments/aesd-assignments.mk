@@ -42,6 +42,11 @@ define AESD_ASSIGNMENTS_INSTALL_TARGET_CMDS
 	$(INSTALL) -m 0755 $(@D)/aesd-char-driver/aesdchar.ko      $(TARGET_DIR)/usr/bin/
 	$(INSTALL) -m 0755 $(@D)/aesd-char-driver/aesdchar-load-unload.sh  $(TARGET_DIR)/etc/init.d/S121aesdchar
 
+	# Assignment 8 test scripts
+	$(INSTALL) -D -m 0755 $(TOPDIR)/../assignment-autotest/test/assignment8/assignment-test.sh $(TARGET_DIR)/usr/bin/assignment-test.sh
+	$(INSTALL) -D -m 0755 $(TOPDIR)/../assignment-autotest/test/assignment8/drivertest.sh     $(TARGET_DIR)/usr/bin/drivertest.sh
+	$(INSTALL) -D -m 0755 $(TOPDIR)/../assignment-autotest/test/assignment8/sockettest.sh       $(TARGET_DIR)/usr/bin/sockettest.sh
+
 	$(INSTALL) -m 0755 $(@D)/server/aesdsocket $(TARGET_DIR)/usr/bin
 	$(INSTALL) -m 0755 $(@D)/server/aesdsocket-start-stop.sh $(TARGET_DIR)/etc/init.d/S99aesdsocket
 endef
