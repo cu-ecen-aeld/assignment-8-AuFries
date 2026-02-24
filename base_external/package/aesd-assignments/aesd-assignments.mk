@@ -5,8 +5,7 @@
 #
 ##############################################################
 
-# UPDATE TO REFERENCE ASSIGNMENT 8 CONTENTS
-AESD_ASSIGNMENTS_VERSION = 'df0cde31e5ca7ed3bd3361de0eae12ce7d061753'
+AESD_ASSIGNMENTS_VERSION = 'df20d88dbd9629afa68a4be2da6fa7016f96f315'
 # Note: Be sure to reference the *ssh* repository URL here (not https) to work properly
 # with ssh keys and the automated build/test system.
 # Your site should start with git@github.com:
