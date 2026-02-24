@@ -4,6 +4,7 @@
 # LDD
 #
 ##############################################################
+LDD_DEPENDENCIES += linux
 
 # Reference assignment 7 git contents
 LDD_VERSION = '80601165fe2e9bb0b8bc46332eaffe1d5e37bb46'
