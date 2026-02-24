@@ -5,7 +5,7 @@
 #
 ##############################################################
 
-AESD_ASSIGNMENTS_VERSION = 'df20d88dbd9629afa68a4be2da6fa7016f96f315'
+AESD_ASSIGNMENTS_VERSION = '6314e388e93e808eb0266e672d683ead4a992414'
 # Note: Be sure to reference the *ssh* repository URL here (not https) to work properly
 # with ssh keys and the automated build/test system.
 # Your site should start with git@github.com:
@@ -39,7 +39,7 @@ define AESD_ASSIGNMENTS_INSTALL_TARGET_CMDS
 	# Assignment 8 char driver
 	$(INSTALL) -m 0755 $(@D)/aesd-char-driver/aesdchar_load    $(TARGET_DIR)/usr/bin/
 	$(INSTALL) -m 0755 $(@D)/aesd-char-driver/aesdchar_unload  $(TARGET_DIR)/usr/bin/
-	$(INSTALL) -m 0755 $(@D)/aesd-char-driver/aesdchar.ko      $(TARGET_DIR)/usr/bin/
+	$(INSTALL) -m 0755 $(@D)/aesd-char-driver/aesdchar.ko      $(TARGET_DIR)/lib/modules/$(LINUX_VERSION_PROBED)/extra/aesdchar.ko
 	$(INSTALL) -m 0755 $(@D)/aesd-char-driver/aesdchar-load-unload.sh  $(TARGET_DIR)/etc/init.d/S121aesdchar
 
 	# Assignment 8 test scripts
